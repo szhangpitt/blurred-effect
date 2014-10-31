@@ -11,10 +11,19 @@ pheight can have the trailing * or + , where * means the height of the content p
 
 *The wrapper size will always equal to the image size. The overflowed content will not push content in HTML.*
 
+Problem statement
+-----------------
+A half-transparent content panel over an image is just ugly (visual noice, color conflict, etc.) 
+
+See the demo
+------------
+http://szhangpitt.github.io/blurred-effect/
+
 How to use
 ----------
 0 - Generate a blurred version of your original image.Image sizes can be different. 
 ![alt text](https://raw.githubusercontent.com/szhangpitt/blurred-effect/master/original-blurred.JPG)
+
 1 - Use the following HTML with all fuzzy-* classes. 
     Note the <img>s with blurred verion first and then original version. 
     You can use any content inside <div class="fuzzy-panel-content"></div>
@@ -32,6 +41,7 @@ How to use
 	</div>
 </div>
 ```
+
 2 - Include all fuzzy-* styles in main.css
 ```css
 .fuzzy-wrapper {
@@ -61,12 +71,15 @@ How to use
       font-size: 1em;
       padding: 0.5em 1.5em; }
 ```
+
 3 - Include blur.js, and inject 'shaopeng.blur' into your module. 
 ```javascript
 angular.module('blurdemo', ['shaopeng.blur'])
 ...
 ```
+
 ...
+
 N - Use fuzzy directive with ftop, fleft, fwidth and fheight if you want fixed pixel based positioning. 
 ```html
 <div class="fuzzy-wrapper" fuzzy ftop="130" fleft="120" fwidth="300" fheight="400" >
