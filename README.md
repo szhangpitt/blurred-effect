@@ -14,7 +14,9 @@ pheight can have the trailing * or + , where * means the height of the content p
 How to use
 ----------
 0 - Generate a blurred version of your original image.Image sizes can be different. 
-1 - Use the following HTML with all fuzzy-* classes. Note the <img>s with blurred verion first and then original version. 
+1 - Use the following HTML with all fuzzy-* classes. 
+    Note the <img>s with blurred verion first and then original version. 
+    You can use any content inside <div class="fuzzy-panel-content"></div>
 ```html
 <div class="fuzzy-wrapper" fuzzy-fluid ptop="0.5" pleft="0.3" pwidth="0.7" pheight="0.4*"><!--  -->
 		<div class="fuzzy-images">
