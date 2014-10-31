@@ -27,8 +27,8 @@ How to use
 ![alt text](https://raw.githubusercontent.com/szhangpitt/blurred-effect/master/original-blurred.JPG)
 
 1 - Use the following HTML with all fuzzy-* classes. 
-    Note the <img>s with blurred verion first and then original version. 
-    You can use any content inside <div class="fuzzy-panel-content"></div>
+    Note the  &lt;img&gt;s with blurred verion first and then original version. 
+    You can use any content inside &lt;div class="fuzzy-panel-content"&gt;&lt;/div&gt;
 ```html
 <div class="fuzzy-wrapper" fuzzy-fluid ptop="0.5" pleft="0.3" pwidth="0.7" pheight="0.4*"><!--  -->
 	<div class="fuzzy-images">
