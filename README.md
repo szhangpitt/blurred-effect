@@ -10,6 +10,9 @@ pheight can have the trailing * or + , where * means the height of the content p
 *Current implementation does not prevent overflow of the content in .fuzzy-panel-content outside of the wrapper. This is in case you need this flow from design perspective. But changes can be made based on feedback.*
 
 *The wrapper size will always equal to the image size. The overflowed content will not push content in HTML.*
+See the demo
+------------
+http://szhangpitt.github.io/blurred-effect/
 
 How to use
 ----------
