@@ -14,24 +14,23 @@ pheight can have the trailing * or + , where * means the height of the content p
 How to use
 ----------
 0 - Generate a blurred version of your original image.Image sizes can be different. 
+![alt text](https://raw.githubusercontent.com/szhangpitt/blurred-effect/master/original-blurred.JPG)
 1 - Use the following HTML with all fuzzy-* classes. 
     Note the <img>s with blurred verion first and then original version. 
     You can use any content inside <div class="fuzzy-panel-content"></div>
 ```html
 <div class="fuzzy-wrapper" fuzzy-fluid ptop="0.5" pleft="0.3" pwidth="0.7" pheight="0.4*"><!--  -->
-		<div class="fuzzy-images">
-			<!-- style="clip: rect({{top}}px, {{left + width}}px, {{top + height}}px, {{left}}px);" -->
-			<img class="fuzzy-blurred" src="/assets/images/nyc_blurred.jpg" alt="unsplash.com/license">  
-			<img class="fuzzy-original" src="/assets/images/nyc_original.jpg" alt="unsplash.com/license">
-		</div>
-		<!-- ng-style="{top: top + 'px', left: left + 'px', width: width + 'px', height: height + 'px'}" -->
-		<div class="fuzzy-panel" >
-			<div class="fuzzy-panel-content">
-				<h3>New York</h3>
-				<p>New York...</p>
-			</div>
+	<div class="fuzzy-images">
+		<img class="fuzzy-blurred" src="/assets/images/nyc_blurred.jpg" alt="unsplash.com/license">  
+		<img class="fuzzy-original" src="/assets/images/nyc_original.jpg" alt="unsplash.com/license">
+	</div>
+	<div class="fuzzy-panel" >
+		<div class="fuzzy-panel-content">
+			<h3>New York</h3>
+			<p>New York – referred to as New York City or the City of New York...</p>
 		</div>
 	</div>
+</div>
 ```
 2 - Include all fuzzy-* styles in main.css
 ```css
@@ -66,4 +65,20 @@ How to use
 ```javascript
 angular.module('blurdemo', ['shaopeng.blur'])
 ...
+```
+...
+N - Use fuzzy directive with ftop, fleft, fwidth and fheight if you want fixed pixel based positioning. 
+```html
+<div class="fuzzy-wrapper" fuzzy ftop="130" fleft="120" fwidth="300" fheight="400" >
+	<div class="fuzzy-images">
+		<img class="fuzzy-blurred" src="/assets/images/sf_blurred.jpg" alt="unsplash.com/license">  
+		<img class="fuzzy-original" src="/assets/images/sf_original.jpg" alt="unsplash.com/license">
+	</div>
+	<div class="fuzzy-panel" >
+		<div class="fuzzy-panel-content">
+			<h3>San Francisco</h3>
+			<p>San Francisco Listeni/sæn frənˈsɪskoʊ/, officially ...</p>
+		</div>
+	</div>
+</div>
 ```
