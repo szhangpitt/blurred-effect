@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html, body {
+  background: #fafafa; }
+
+html {
+  overflow-y: scroll; }
+
+body {
+  background: url('../images/debut_light/debut_light.png'); }
+  body h3 {
+    font-size: 1.5em;
+    margin-top: 0.8em;
+    margin-bottom: 0.4em; }
+  @media (max-width: 319px) {
+    body {
+      font-size: 10px; } }
+  @media (min-width: 320px) and (max-width: 767px) {
+    body {
+      font-size: 13px; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    body {
+      font-size: 14px; } }
+  @media (min-width: 1024px) {
+    body {
+      font-size: 16px; } }
+
+.fuzzy-wrapper {
+  position: relative;
+  font-size: 1em;
+  color: #222; }
+  .fuzzy-wrapper .fuzzy-images {
+    font-size: 1em;
+    position: relative; }
+    .fuzzy-wrapper .fuzzy-images img {
+      width: 100%; }
+    .fuzzy-wrapper .fuzzy-images .fuzzy-blurred {
+      font-size: 1em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+    .fuzzy-wrapper .fuzzy-images .fuzzy-original {
+      font-size: 1em; }
+  .fuzzy-wrapper .fuzzy-panel {
+    font-size: 1em;
+    position: absolute;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.4); }
+    .fuzzy-wrapper .fuzzy-panel .fuzzy-panel-content {
+      font-size: 1em;
+      padding: 0.5em 1.5em; }

@@ -1,0 +1,84 @@
+<!doctype html>
+<html ng-app="blurdemo">
+<head>
+	<title>Blur - Shaopeng Zhang</title>
+	<link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/libs/bootflat/css/bootflat.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/styles/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="assets/images/keyboard16.png" sizes="16x16">
+	<link rel="icon" href="assets/images/keyboard32.png" sizes="32x32">
+</head>
+
+<body ng-controller="AppController"  ontouchstart="">
+
+
+<div class="fuzzy-wrapper" fuzzy-fluid ptop="0.5" pleft="0.3" pwidth="0.7" pheight="0.4*"><!--  -->
+		<div class="fuzzy-images">
+			<!-- style="clip: rect({{top}}px, {{left + width}}px, {{top + height}}px, {{left}}px);" -->
+			<img class="fuzzy-blurred" src="/assets/images/nyc_blurred.jpg" alt="unsplash.com/license">  
+			<img class="fuzzy-original" src="/assets/images/nyc_original.jpg" alt="unsplash.com/license">
+		</div>
+		<!-- ng-style="{top: top + 'px', left: left + 'px', width: width + 'px', height: height + 'px'}" -->
+		<div class="fuzzy-panel" >
+			<div class="fuzzy-panel-content">
+				<h3>New York</h3>
+				<p>New York – referred to as New York City or the City of New York to distinguish it from the State of New York, of which it is a part – is the most populous city in the United States and the center of the New York metropolitan area, the premier gateway for legal immigration to the United States[6][7][8] and one of the most populous urban agglomerations in the world.[9] A global power city,[10] New York exerts a significant impact upon commerce, finance, media, art, fashion, research, technology, education, and entertainment. Home to the headquarters of the United Nations,[11] New York is an important center for international diplomacy[12] and has been described as the cultural and financial capital of the world.[13][14][15][16][17]</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="fuzzy-wrapper" fuzzy-fluid pbottom="0.1" pleft="0" pwidth="0.7" pheight="0.6*"><!--  -->
+		<div class="fuzzy-images">
+			<!-- style="clip: rect({{top}}px, {{left + width}}px, {{top + height}}px, {{left}}px);" -->
+			<img class="fuzzy-blurred" src="/assets/images/sh_blurred.jpg" alt="unsplash.com/license">  
+			<img class="fuzzy-original" src="/assets/images/sh_original.jpg" alt="unsplash.com/license">
+		</div>
+		<!-- ng-style="{top: top + 'px', left: left + 'px', width: width + 'px', height: height + 'px'}" -->
+		<div class="fuzzy-panel" >
+			<div class="fuzzy-panel-content">
+				<h3>Shanghai</h3>
+				<p>Shanghai is the largest Chinese city by population[8][9] and the largest city proper by population in the world.[10] It is one of the four direct-controlled municipalities, with a population of more than 24 million as of 2013.[5] It is a global financial center,[11] and a transport hub with the world's busiest container port.[12] Located in the Yangtze River Delta in East China, Shanghai sits at the mouth of the Yangtze in the middle portion of the Chinese coast. The municipality borders the provinces of Jiangsu and Zhejiang to the north, south and west, and is bounded to the east by the East China Sea.[13]</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="fuzzy-wrapper" fuzzy-fluid ptop="0.1" pleft="0.7" pwidth="0.3" pheight="0.8"><!--  -->
+		<div class="fuzzy-images">
+			<!-- style="clip: rect({{top}}px, {{left + width}}px, {{top + height}}px, {{left}}px);" -->
+			<img class="fuzzy-blurred" src="/assets/images/dc_blurred.jpg" alt="unsplash.com/license">  
+			<img class="fuzzy-original" src="/assets/images/dc_original.jpg" alt="unsplash.com/license">
+		</div>
+		<!-- ng-style="{top: top + 'px', left: left + 'px', width: width + 'px', height: height + 'px'}" -->
+		<div class="fuzzy-panel" >
+			<div class="fuzzy-panel-content">
+				<h3>Washington, D.C.</h3>
+				<p>Washington, D.C., or simply D.C., is the capital of the United States. The U.S. Constitution provided for a federal district under the exclusive jurisdiction of the Congress and the District is therefore not a part of any U.S. state.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="fuzzy-wrapper" fuzzy ftop="130" fleft="120" fwidth="300" fheight="400" >
+		<div class="fuzzy-images">
+			<!-- style="clip: rect({{top}}px, {{left + width}}px, {{top + height}}px, {{left}}px);" -->
+			<img class="fuzzy-blurred" src="/assets/images/sf_blurred.jpg" alt="unsplash.com/license">  
+			<img class="fuzzy-original" src="/assets/images/sf_original.jpg" alt="unsplash.com/license">
+		</div>
+		<!-- ng-style="{top: top + 'px', left: left + 'px', width: width + 'px', height: height + 'px'}" -->
+		<div class="fuzzy-panel" >
+			<div class="fuzzy-panel-content">
+				<h3>San Francisco</h3>
+				<p>San Francisco Listeni/sæn frənˈsɪskoʊ/, officially the City and County of San Francisco, is the cultural center and a leading financial hub of the San Francisco Bay Area and Northern California. </p>
+				<p>San Francisco (Spanish for "Saint Francis") was founded on June 29, 1776, when colonists from Spain established a fort at the Golden Gate and a mission named for St. Francis of Assisi a few miles away.[21] The California Gold Rush of 1849 brought rapid growth, making it the largest city on the West Coast at the time. Due to the growth of its population, San Francisco became a consolidated city-county in 1856.[22] After three-quarters of the city was destroyed by the 1906 earthquake and fire,[23] San Francisco was quickly rebuilt, hosting the Panama-Pacific International Exposition nine years later. During World War II, San Francisco was the port of embarkation for service members shipping out to the Pacific Theater.[24] After the war, the confluence of returning servicemen, massive immigration, liberalizing attitudes, along with the rise of the "hippie" counterculture, the Sexual Revolution, the Peace Movement growing from opposition to United States involvement in the Vietnam War, and other factors led to the Summer of Love and the gay rights movement, cementing San Francisco as a center of liberal activism in the United States.</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="assets/libs/libs.js"></script>
+	<script src="assets/scripts/all.js"></script>
+
+</body>
+</html>
