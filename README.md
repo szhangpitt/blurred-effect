@@ -1,7 +1,9 @@
 blurred-effect
 ==============
 
-An angular directive to implement a css blurred effec over an image. 
+An angular directive to implement a css blurred effec over an image. Fluid, responsive, and pluggable.  
+
+![alt text](https://raw.githubusercontent.com/szhangpitt/blurred-effect/gh-pages/blurred-result.JPG)
 
 Use directive 'fuzzy-fluid', and use ptop(or pbottom), pleft, pwidth, and pheight. 
 Values are float number 0 - 1, relative to image width or height. 
