@@ -15,7 +15,7 @@ pheight can have the trailing * or + , where * means the height of the content p
 
 Problem statement
 -----------------
-A half-transparent content panel over an image is just ugly (visual noice, color conflict, etc.) 
+A half-transparent content panel over an image is just ugly (visual noice, color conflict, etc.) And as a photograph hobbyist I'm always a fan of creamy bokeh. 
 
 See the demo
 ------------
@@ -23,7 +23,7 @@ http://szhangpitt.github.io/blurred-effect/
 
 How to use
 ----------
-0 - Generate a blurred version of your original image.Image sizes can be different. 
+0 - Generate a blurred version of your original image. You want to use Guassian blur for the best effect. 
 ![alt text](https://raw.githubusercontent.com/szhangpitt/blurred-effect/master/original-blurred.JPG)
 
 1 - Use the following HTML with all fuzzy-* classes. 
