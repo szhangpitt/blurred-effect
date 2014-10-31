@@ -13,8 +13,8 @@ pheight can have the trailing * or + , where * means the height of the content p
 
 How to use
 ----------
-0 Generate a blurred version of your original image.Image sizes can be different. 
-1 Use the following HTML with all fuzzy-* classes. Note the <img>s with blurred verion first and then original version. 
+0 - Generate a blurred version of your original image.Image sizes can be different. 
+1 - Use the following HTML with all fuzzy-* classes. Note the <img>s with blurred verion first and then original version. 
 ```html
 <div class="fuzzy-wrapper" fuzzy-fluid ptop="0.5" pleft="0.3" pwidth="0.7" pheight="0.4*"><!--  -->
 		<div class="fuzzy-images">
@@ -31,7 +31,7 @@ How to use
 		</div>
 	</div>
 ```
-2 Include all fuzzy-* styles in main.css
+2 - Include all fuzzy-* styles in main.css
 ```css
 .fuzzy-wrapper {
   position: relative;
@@ -60,7 +60,7 @@ How to use
       font-size: 1em;
       padding: 0.5em 1.5em; }
 ```
-3 Include blur.js, and inject 'shaopeng.blur' into your module. 
+3 - Include blur.js, and inject 'shaopeng.blur' into your module. 
 ```javascript
 angular.module('blurdemo', ['shaopeng.blur'])
 ...
