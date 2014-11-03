@@ -3,6 +3,10 @@ blurred-effect
 
 An angular directive to implement a css blurred effec over an image. Fluid, responsive, and pluggable.  
 
+See the demo
+------------
+http://szhangpitt.github.io/blurred-effect/
+
 ![alt text](https://raw.githubusercontent.com/szhangpitt/blurred-effect/gh-pages/blurred-result.JPG)
 
 Use directive 'fuzzy-fluid', and use ptop(or pbottom), pleft, pwidth, and pheight. 
@@ -17,16 +21,14 @@ Problem statement
 -----------------
 A half-transparent content panel over an image is just ugly (visual noice, color conflict, etc.) And as a photograph hobbyist I'm always a fan of creamy bokeh. 
 
-See the demo
-------------
-http://szhangpitt.github.io/blurred-effect/
 
 How to use
 ----------
-0 - Generate a blurred version of your original image. You want to use Guassian blur for the best effect. 
+#### 0 - Generate a blurred version of your original image. You want to use Guassian blur for the best effect. 
 ![alt text](https://raw.githubusercontent.com/szhangpitt/blurred-effect/master/original-blurred.JPG)
 
-1 - Use the following HTML with all fuzzy-* classes. 
+#### 1 - Use the following HTML with all fuzzy-* classes. 
+
     Note the  &lt;img&gt;s with blurred verion first and then original version. 
     You can use any content inside &lt;div class="fuzzy-panel-content"&gt;&lt;/div&gt;
 ```html
@@ -44,7 +46,8 @@ How to use
 </div>
 ```
 
-2 - Include all fuzzy-* styles in main.css
+#### 2 - Include all fuzzy-* styles in main.css
+
 ```css
 .fuzzy-wrapper {
   position: relative;
@@ -74,7 +77,8 @@ How to use
       padding: 0.5em 1.5em; }
 ```
 
-3 - Include blur.js, and inject 'shaopeng.blur' into your module. 
+#### 3 - Include blur.js, and inject 'shaopeng.blur' into your module. 
+
 ```javascript
 angular.module('blurdemo', ['shaopeng.blur'])
 ...
@@ -82,7 +86,8 @@ angular.module('blurdemo', ['shaopeng.blur'])
 
 ...
 
-N - Use fuzzy directive with ftop, fleft, fwidth and fheight if you want fixed pixel based positioning. 
+#### N - Use fuzzy directive with ftop, fleft, fwidth and fheight if you want fixed pixel based positioning. 
+
 ```html
 <div class="fuzzy-wrapper" fuzzy ftop="130" fleft="120" fwidth="300" fheight="400" >
 	<div class="fuzzy-images">
