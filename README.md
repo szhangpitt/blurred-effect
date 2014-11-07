@@ -29,8 +29,9 @@ How to use
 
 #### 1 - Use the following HTML with all fuzzy-* classes. 
 
-    Note the  &lt;img&gt;s with blurred verion first and then original version. 
-    You can use any content inside &lt;div class="fuzzy-panel-content"&gt;&lt;/div&gt;
+    Note the  <img>s with blurred verion first and then original version. 
+    You can use any content inside <div class="fuzzy-panel-content"></div>
+    
 ```html
 <div class="fuzzy-wrapper" fuzzy-fluid ptop="0.5" pleft="0.3" pwidth="0.7" pheight="0.4*"><!--  -->
 	<div class="fuzzy-images">
